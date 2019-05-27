@@ -4,6 +4,9 @@
 
 
 <beans>
-	<bean id="triangle" class="com.anand.spring.Triangle" />
+	<bean id="triangle" class="com.anand.spring.Triangle">
+	<property name="type" value = "Equilateral"></property>
+	
+	</bean>
 	
 </beans>
