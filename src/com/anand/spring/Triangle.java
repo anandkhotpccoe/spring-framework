@@ -14,6 +14,10 @@ public class Triangle {
 	}
 	
 	
+	public Triangle(int height)
+	{
+		this.height = height;
+	}
 	
 	public Triangle(String type)
 	{

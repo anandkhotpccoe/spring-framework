@@ -5,9 +5,9 @@
 
 <beans>
 	<bean id="triangle" class="com.anand.spring.Triangle">
-	<constructor-arg value = "Equilateral" />
-	<constructor-arg value ="20" />
 	
+	<constructor-arg type = "int" value ="20" />
+	 
 	</bean>
 	
 </beans>
