@@ -14,7 +14,7 @@ public class DrawingApp {
 		//Application Context and Property Initialization
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		
-		Triangle triangle = (Triangle)context.getBean("triangle");
+		Triangle triangle = (Triangle)context.getBean("triangle-alias");
 		
 		
 		

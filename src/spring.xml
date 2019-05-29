@@ -4,7 +4,7 @@
 
 
 <beans>
-	<bean id="triangle" class="com.anand.spring.Triangle">	 
+	<bean id="triangle" class="com.anand.spring.Triangle" name="triangle-name">	 
 	<property name="pointA" ref = "zeroPoint"></property>
 	<property name="pointB">
 		<bean class="com.anand.spring.Point">
@@ -26,6 +26,9 @@
 		<property name="x" value="0"></property>
 		<property name="y" value="0"></property>	 
 	</bean>
+	
+	
+	<alias name="triangle" alias="triangle-alias"/>
 	
 	
 	
