@@ -6,8 +6,19 @@
 <beans>
 	<bean id="triangle" class="com.anand.spring.Triangle">	 
 	<property name="pointA" ref = "zeroPoint"></property>
-	<property name="pointB" ref = "point2"></property>
-	<property name="pointC" ref = "point3"></property>
+	<property name="pointB">
+		<bean class="com.anand.spring.Point">
+			<property name="x" value="-20"></property>
+			<property name="y" value="0"></property>	 
+		</bean>
+	
+	</property>
+	<property name="pointC">
+		<bean class="com.anand.spring.Point">
+			<property name="x" value="20"></property>
+			<property name="y" value="0"></property>	 
+		</bean>
+	</property>
 	
 	</bean>
 	
@@ -17,14 +28,6 @@
 	</bean>
 	
 	
-	<bean id="point2" class="com.anand.spring.Point">
-		<property name="x" value="-20"></property>
-		<property name="y" value="0"></property>	 
-	</bean>
 	
-	<bean id="point3" class="com.anand.spring.Point">
-		<property name="x" value="20"></property>
-		<property name="y" value="0"></property>	 
-	</bean>
 	
 </beans>
