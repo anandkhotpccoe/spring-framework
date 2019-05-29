@@ -5,6 +5,10 @@
 
 <beans>
 	<bean id="triangle" class="com.anand.spring.Triangle">	 
+	<property name="pointA" ref = "zeroPoint"></property>
+	<property name="pointB" ref = "point2"></property>
+	<property name="pointC" ref = "point3"></property>
+	
 	</bean>
 	
 	<bean id="zeroPoint" class="com.anand.spring.Point">
