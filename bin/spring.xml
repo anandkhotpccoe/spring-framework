@@ -4,37 +4,21 @@
 
 
 <beans>
-	<bean id="parenttriangle" class="com.anand.spring.Triangle" abstract="true">
-		<property name="points">
-			<list>
-			<ref bean="pointA" />
-			</list>
-		</property>	 
-	</bean>
-	
-	
-	<bean id="triangle1" class="com.anand.spring.Triangle" parent="parenttriangle">
-		<property name="points">
-		<list merge="true">
-		<ref bean="pointB" />
+	<bean id="triangle" class="com.anand.spring.Triangle">
+	<property name="points">
+		<list>
+			<ref bean="pointA"/>
+			<ref bean="pointB"/>
+			<ref bean="pointC"/>
 		</list>
-		</property>
+	</property>	 
+	
+	
 	</bean>
-	
-	<bean id="traingle2" class="com.anand.spring.Triangle" parent="triangle1" >
-		<property name="points">
-			<list merge="true" >
-			 <ref bean="pointC"/>
-			</list>
-		</property>
-	</bean>
-	
-	
-	
 	
 	<bean id="pointA" class="com.anand.spring.Point">
 		<property name="x" value="0"></property>
-		<property name="y" value="0"></property>
+		<property name="y" value="0"></property>	 
 	</bean>
 	
 	

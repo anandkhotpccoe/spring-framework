@@ -2,7 +2,8 @@ package com.anand.spring;
 
 /*import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;*/
-import org.springframework.context.ApplicationContext;
+
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 //import org.springframework.core.io.FileSystemResource;
 
@@ -12,9 +13,10 @@ public class DrawingApp {
 		// TODO Auto-generated method stub
 		
 		//Application Context and Property Initialization
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		context.registerShutdownHook();
 		
-		Triangle triangle = (Triangle)context.getBean("traingle2");
+		Triangle triangle = (Triangle)context.getBean("triangle");
 		
 		
 		

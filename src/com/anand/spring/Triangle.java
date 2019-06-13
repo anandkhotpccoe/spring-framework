@@ -3,7 +3,9 @@ package com.anand.spring;
 import java.util.Iterator;
 import java.util.List;
 
-public class Triangle{
+import org.springframework.beans.factory.InitializingBean;
+
+public class Triangle implements InitializingBean{
 	
 	List<Point> points;
 	
@@ -38,6 +40,15 @@ public class Triangle{
 
 	public void setPoints(List<Point> points) {
 		this.points = points;
+	}
+
+
+
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("Initializing Bean Init Method Called For Triangle");
+		
 	}
 
 
