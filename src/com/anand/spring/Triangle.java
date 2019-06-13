@@ -1,57 +1,47 @@
 package com.anand.spring;
 
-
-
+import java.util.Iterator;
+import java.util.List;
 
 public class Triangle{
 	
+	List<Point> points;
 	
-	private Point pointA;
-	private Point pointB;
-	private Point pointC;
 	
 	
 	
 	public void draw()
 	{
 		
-			System.out.println("PointA = (" + getPointA().getX() + "," + getPointA().getY() + ")");
-			System.out.println("PointB = (" + getPointB().getX() + "," + getPointB().getY() + ")");
-			System.out.println("PointC = (" + getPointC().getX() + "," + getPointC().getY() + ")");
+		for (Iterator<Point> iterator = points.iterator(); iterator.hasNext();) {
+			Point point = (Point) iterator.next();
+			System.out.println("Point : (" + point.getX() + "," + point.getY() + ")");
+			
+		}
+//			System.out.println("PointA = (" + getPointA().getX() + "," + getPointA().getY() + ")");
+//			System.out.println("PointB = (" + getPointB().getX() + "," + getPointB().getY() + ")");
+//			System.out.println("PointC = (" + getPointC().getX() + "," + getPointC().getY() + ")");
 		
 		
 		
 	}
 
 
-	public Point getPointA() {
-		return pointA;
+
+
+	public List<Point> getPoints() {
+		return points;
 	}
 
 
-	public void setPointA(Point pointA) {
-		this.pointA = pointA;
+
+
+	public void setPoints(List<Point> points) {
+		this.points = points;
 	}
 
 
-	public Point getPointB() {
-		return pointB;
-	}
-
-
-	public void setPointB(Point pointB) {
-		this.pointB = pointB;
-	}
-
-
-	public Point getPointC() {
-		return pointC;
-	}
-
-
-	public void setPointC(Point pointC) {
-		this.pointC = pointC;
-	}
+	
 
 
 	
