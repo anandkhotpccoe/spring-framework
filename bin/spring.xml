@@ -32,4 +32,6 @@
 		<property name="y" value="0"></property>	 
 	</bean>
 	
+	<bean class="com.anand.spring.DisplayNameBeanPostProcessor"></bean>
+	
 </beans>
