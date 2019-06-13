@@ -33,5 +33,6 @@
 	</bean>
 	
 	<bean class="com.anand.spring.DisplayNameBeanPostProcessor"></bean>
+	<bean class="com.anand.spring.DisplayNameBeanFactoryPP"></bean>
 	
 </beans>
