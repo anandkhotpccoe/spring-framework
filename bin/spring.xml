@@ -4,7 +4,7 @@
 
 
 <beans>
-	<bean id="parenttriangle" class="com.anand.spring.Triangle">
+	<bean id="parenttriangle" class="com.anand.spring.Triangle" abstract="true">
 		<property name="points">
 			<list>
 			<ref bean="pointA" />
