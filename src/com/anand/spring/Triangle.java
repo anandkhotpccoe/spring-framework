@@ -3,9 +3,10 @@ package com.anand.spring;
 import java.util.Iterator;
 import java.util.List;
 
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class Triangle implements InitializingBean{
+public class Triangle implements InitializingBean, DisposableBean{
 	
 	List<Point> points;
 	
@@ -52,6 +53,15 @@ public class Triangle implements InitializingBean{
 	}
 
 
+
+
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("Disposable Bean destroy Method Called For Triangle");
+		
+	}
+
+	
 	
 
 
