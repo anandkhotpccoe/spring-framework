@@ -4,10 +4,21 @@
 
 
 <beans>
-	<bean id="triangle" class="com.anand.spring.Triangle" autowire="byName">	 
-	
-	
+	<bean id="parenttriangle" class="com.anand.spring.Triangle">
+		<property name="pointA" ref="pointA"></property>	 
 	</bean>
+	
+	
+	<bean id="triangle1" class="com.anand.spring.Triangle" parent="parenttriangle">
+		<property name="pointB" ref="pointB"></property>
+	</bean>
+	
+	<bean id="traingle2" class="com.anand.spring.Triangle" parent="triangle1" >
+		<property name="pointC" ref="pointC"></property>
+	</bean>
+	
+	
+	
 	
 	<bean id="pointA" class="com.anand.spring.Point">
 		<property name="x" value="0"></property>

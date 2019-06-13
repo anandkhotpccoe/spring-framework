@@ -2,7 +2,8 @@ package com.anand.spring;
 
 
 
-public class Triangle {
+
+public class Triangle{
 	
 	
 	private Point pointA;
@@ -10,12 +11,13 @@ public class Triangle {
 	private Point pointC;
 	
 	
+	
 	public void draw()
 	{
 		
 			System.out.println("PointA = (" + getPointA().getX() + "," + getPointA().getY() + ")");
-			System.out.println("PointA = (" + getPointB().getX() + "," + getPointB().getY() + ")");
-			System.out.println("PointA = (" + getPointC().getX() + "," + getPointC().getY() + ")");
+			System.out.println("PointB = (" + getPointB().getX() + "," + getPointB().getY() + ")");
+			System.out.println("PointC = (" + getPointC().getX() + "," + getPointC().getY() + ")");
 		
 		
 		
@@ -51,6 +53,8 @@ public class Triangle {
 		this.pointC = pointC;
 	}
 
+
+	
 
 	
 
