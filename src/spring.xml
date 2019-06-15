@@ -43,12 +43,12 @@
 	
 	
 	<bean id="circle" class="com.anand.spring.Circle">
-	<property name="center" ref="pointA">
-		
-	</property>	 
-	
-	
+	<!-- <property name="center" ref="pointA">	
+	</property>	  -->
 	</bean>
+	
+	
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
 	
 	
 </beans>
