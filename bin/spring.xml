@@ -4,7 +4,7 @@
 
 
 <beans default-init-method="myInit" default-destroy-method="myDestroy">
-	<bean id="triangle" class="com.anand.spring.Triangle">
+	<!-- <bean id="triangle" class="com.anand.spring.Triangle">
 	<property name="points">
 		<list>
 			<ref bean="pointA"/>
@@ -14,7 +14,7 @@
 	</property>	 
 	
 	
-	</bean>
+	</bean> -->
 	
 	<bean id="pointA" class="com.anand.spring.Point">
 		<property name="x" value="${pointA.pointX}"></property>
@@ -22,7 +22,7 @@
 	</bean>
 	
 	
-	<bean id="pointB" class="com.anand.spring.Point">
+	<!-- <bean id="pointB" class="com.anand.spring.Point">
 		<property name="x" value="-20"></property>
 		<property name="y" value="0"></property>	 
 	</bean>
@@ -30,7 +30,7 @@
 	<bean id="pointC" class="com.anand.spring.Point">
 		<property name="x" value="20"></property>
 		<property name="y" value="0"></property>	 
-	</bean>
+	</bean> -->
 	
 	<bean class="com.anand.spring.DisplayNameBeanPostProcessor"></bean>
 	<bean class="com.anand.spring.DisplayNameBeanFactoryPP"></bean>
@@ -43,12 +43,13 @@
 	
 	
 	<bean id="circle" class="com.anand.spring.Circle">
+	<!-- Below Reference is not needed -->
 	<!-- <property name="center" ref="pointA">	
 	</property>	  -->
 	</bean>
 	
 	
-	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
 	
 	
 </beans>

@@ -1,5 +1,6 @@
 package com.anand.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Required;
 
 public class Circle implements Shape {
@@ -10,7 +11,7 @@ public class Circle implements Shape {
 	public void draw() {
 		
 		System.out.println("Drawing Cicle:");
-		System.out.println("Circle: Point is: (" + center.getX() + "'" + center.getY() +")");
+		System.out.println("Circle: Point is: (" + center.getX() + "," + center.getY() +")");
 		
 	}
 	public Point getCenter() {
@@ -18,7 +19,7 @@ public class Circle implements Shape {
 	}
 	
 	
-	@Required
+	@Autowired
 	public void setCenter(Point center) {
 		this.center = center;
 	}

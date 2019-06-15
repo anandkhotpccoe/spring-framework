@@ -18,7 +18,7 @@ public class DrawingApp {
 		
 		//Triangle triangle = (Triangle)context.getBean("triangle");
 		
-		Shape shape = (Shape)context.getBean("cirle");
+		Shape shape = (Shape)context.getBean("circle");
 		
 		
 		shape.draw();
