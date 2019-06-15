@@ -22,7 +22,7 @@
 	</bean>
 	
 	
-	<!-- <bean id="pointB" class="com.anand.spring.Point">
+	<bean id="pointB" class="com.anand.spring.Point">
 		<property name="x" value="-20"></property>
 		<property name="y" value="0"></property>	 
 	</bean>
@@ -30,7 +30,7 @@
 	<bean id="pointC" class="com.anand.spring.Point">
 		<property name="x" value="20"></property>
 		<property name="y" value="0"></property>	 
-	</bean> -->
+	</bean>
 	
 	<bean class="com.anand.spring.DisplayNameBeanPostProcessor"></bean>
 	<bean class="com.anand.spring.DisplayNameBeanFactoryPP"></bean>
