@@ -16,11 +16,12 @@ public class DrawingApp {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		context.registerShutdownHook();
 		
-		Triangle triangle = (Triangle)context.getBean("triangle");
+		//Triangle triangle = (Triangle)context.getBean("triangle");
+		
+		Shape shape = (Shape)context.getBean("cirle");
 		
 		
-		
-		triangle.draw();
+		shape.draw();
 		
 		//XML Bean factory Initialization
 		/*

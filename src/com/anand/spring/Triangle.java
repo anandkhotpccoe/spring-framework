@@ -8,7 +8,7 @@ import org.springframework.beans.factory.InitializingBean;
 
 
 
-public class Triangle implements InitializingBean, DisposableBean{
+public class Triangle implements Shape,InitializingBean, DisposableBean{
 	
 	List<Point> points;
 	
@@ -17,7 +17,7 @@ public class Triangle implements InitializingBean, DisposableBean{
 	
 	public void draw()
 	{
-		
+		System.out.println("Drawing Triangle:");
 		for (Iterator<Point> iterator = points.iterator(); iterator.hasNext();) {
 			Point point = (Point) iterator.next();
 			System.out.println("Point : (" + point.getX() + "," + point.getY() + ")");
