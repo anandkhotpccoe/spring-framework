@@ -35,6 +35,12 @@
 		<property name="y" value="0"></property>	 
 	</bean>
 	
+	
+	<bean id="center" class="com.anand.spring.Point">
+		<property name="x" value="-20"></property>
+		<property name="y" value="0"></property>	 
+	</bean>
+	
 	<bean id="pointC" class="com.anand.spring.Point">
 		<property name="x" value="20"></property>
 		<property name="y" value="0"></property>	 
