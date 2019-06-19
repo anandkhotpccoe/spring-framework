@@ -5,9 +5,10 @@ import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 
-@Component
+@Service
 public class Circle implements Shape {
 
 	
