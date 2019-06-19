@@ -37,7 +37,7 @@
 	
 	
 	<bean id="center" class="com.anand.spring.Point">
-		<property name="x" value="-20"></property>
+		<property name="x" value="-120"></property>
 		<property name="y" value="0"></property>	 
 	</bean>
 	
@@ -55,14 +55,14 @@
 	</bean>
 	
 	
-	
+	<!-- 
 	<bean id="circle" class="com.anand.spring.Circle">
-	<!-- Below Reference is not needed -->
-	<!-- <property name="center" ref="pointA">	
-	</property>	  -->
-	</bean>
+	Below Reference is not needed
+	<property name="center" ref="pointA">	
+	</property>	 
+	</bean> -->
 	
-	
+	<context:component-scan base-package="com.anand.spring"></context:component-scan>
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
 	
 	
